@@ -13,7 +13,7 @@ bundle install
 
 In this lesson, we'll code a `create` action — '**C**' in the '**CRUD**' life
 cycle — that saves a new `Post` object and then redirects to the newly-created
-post's `show` page. This lesson is updated for Rails 7.1+ and uses `form_with` for forms.
+post's `show` page.
 
 Before implementing this functionality, let's first open up a Rails console
 session and create a record manually.

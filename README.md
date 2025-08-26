@@ -6,19 +6,19 @@ In this lesson, we'll be using some existing code to explore the `create` action
 in Rails. To get the app set up, run:
 
 ```console
-$ bundle install
+bundle install
 ```
 
 ## Creating Records
 
 In this lesson, we'll code a `create` action — '**C**' in the '**CRUD**' life
 cycle — that saves a new `Post` object and then redirects to the newly-created
-post's `show` page.
+post's `show` page. This lesson is updated for Rails 7.1+ and uses `form_with` for forms.
 
 Before implementing this functionality, let's first open up a Rails console
 session and create a record manually.
 
-First, run `rails c` to enter a console, then enter the following lines one at a
+First, run `bin/rails c` to enter a console, then enter the following lines one at a
 time:
 
 ```ruby
@@ -86,7 +86,7 @@ assign them the `post` instance attributes and save the instance to our
 database.
 
 We've already got the route and our form created. Let's explore this
-functionality by running the server with `rails s`. If you go to `/posts/new`,
+functionality by running the server with `bin/rails server`. If you go to `/posts/new`,
 fill out the form, and submit it, you'll get the message shown below in your
 terminal:
 
